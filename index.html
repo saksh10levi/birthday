@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Birthday Portal 🎂❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PAGE: WELCOME -->
+  <section class="page" id="page-welcome">
+    <div class="decor-top"></div>
+    <div class="welcome-card">
+      <h1 class="hello">Hello, Cutiepie! 💖</h1>
+      <p class="sub">You have a very important notification: it's your birthday today 🎈</p>
+      <img src="her1.jpeg" alt="Her photo" class="welcome-photo" />
+      <button class="btn" id="btn-ready">Ready for the surprise?</button>
+    </div>
+    <div class="decor-bottom"></div>
+  </section>
+
+  <!-- PAGE: BORN -->
+  <section class="page hidden" id="page-born">
+    <div class="card">
+      <h2>On this day — 22 years ago — a cutieeee was born 🎉</h2>
+      <p class="born-sub">The world upgraded its version that day.</p>
+      <img src="her2.jpeg" alt="Her photo" class="born-photo" />
+      <button class="btn" id="btn-start-celebration">Start the celebration</button>
+    </div>
+  </section>
+
+  <!-- PAGE: CAKE -->
+  <section class="page hidden" id="page-cake">
+    <div class="card cake-card">
+      <h2>Make a wish — but first, blow the candles!</h2>
+
+      <div class="cake-wrap">
+        <div class="cake">
+          <div class="cake-layer layer1"></div>
+          <div class="cake-layer layer2"></div>
+          <div class="cake-layer layer3"></div>
+
+          <div class="candles">
+            <div class="candle"><span class="flame"></span></div>
+            <div class="candle"><span class="flame"></span></div>
+            <div class="candle"><span class="flame"></span></div>
+            <div class="candle"><span class="flame"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn" id="btn-blow">Blow the candles</button>
+      <button class="btn hidden" id="btn-pop-balloons">Let's pop the balloons</button>
+    </div>
+  </section>
+
+  <!-- PAGE: BALLOONS -->
+  <section class="page hidden" id="page-balloons">
+    <div class="card balloons-card">
+      <h2>Pop the balloons — reveal the secrets 🎈</h2>
+
+      <div class="balloon-row">
+        <div class="balloon" data-msg="You are dangerously adorable 💕">🎈</div>
+        <div class="balloon" data-msg="Your smile crashes my system 😍">🎈</div>
+        <div class="balloon" data-msg="You turn normal days into core memories ✨">🎈</div>
+        <div class="balloon" data-msg="I pick you. Every version. Always. ❤️">🎈</div>
+      </div>
+
+      <div class="reveals" id="reveals"></div>
+
+      <button class="btn" id="btn-finale">Finish & Confetti</button>
+    </div>
+  </section>
+
+  <!-- PAGE: FINAL -->
+  <section class="page hidden" id="page-final">
+    <div class="card final-card">
+      <h1>Happy Birthday, my Cutiepie! 🎂👑</h1>
+      <p class="final-sub">Open your surprise IRL — turn around 😉</p>
+      <img src="her3.jpeg" alt="Her photo" class="final-photo" />
+
+      <div style="margin-top:16px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+        <button class="btn" id="btn-open-secret">A secret message for you 💌</button>
+        <button class="btn" id="btn-open-future">Click to have a glimpse of future 🔮</button>
+      </div>
+    </div>
+    <canvas id="confetti"></canvas>
+  </section>
+
+  <!-- SECRET MESSAGE PAGE -->
+  <section class="page hidden" id="page-secret">
+    <div class="card final-card secret-card">
+      <h1 class="secret-heading">A little secret — just for you 🥹</h1>
+
+      <div class="secret-box" id="secretBox">
+        <p><strong>Happy Birthday, Zaheraji!!!</strong></p>
+        <p>
+          You are one of the most incredible people I have ever met.
+          “Beauty and brains” clearly had you in mind.
+          You inspire me to grow — not because you demand it,
+          but because being around you makes me want to become better
+          This year has big, beautiful things waiting for you.
+          May your happiness increase,
+          and may your waist remain completely drama-free. ❤️
+        </p>
+      </div>
+
+      <div style="margin-top:16px; display:flex; gap:12px; justify-content:center;">
+        <button class="btn" id="btn-react">Show reaction 💖</button>
+        <button class="btn" id="btn-back-to-final">Back</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUTURE PAGE -->
+  <section class="page hidden future-page" id="page-future">
+    <div class="future-container">
+      <h1 class="future-title">A Tiny Glimpse Into The Future ✨</h1>
+
+      <img src="future.png" alt="Future Us" class="future-image" />
+
+      <p class="future-text">
+        This could totally be us...    
+        if you maybe think about me a bit more.
+        just a *little* more often.
+      </p>
+
+      <button class="btn" id="btn-back-from-future">Back</button>
+    </div>
+  </section>
+
+  <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <audio id="pop-sound">
+    <source src="pop.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
